@@ -1,0 +1,578 @@
+:root {
+    --primary-purple: #4f51c0;
+    --header-dark: #3f42a6;
+    --left-bg: #5fa855;
+    /* Warna Hijau Left Side */
+    --right-bg: #ffff00;
+    /* Warna Kuning Right Side */
+    --text-dark: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body {
+    background: #f3f5f8;
+    color: #2c3e50;
+    line-height: 1.7;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Container Selector */
+.lang-selector-container {
+    position: relative;
+    display: inline-block;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Wrapper Dropdown Custom */
+.select-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling Dropdown */
+.lang-dropdown {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 36px 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.lang-dropdown:hover {
+    border-color: #9ca3af;
+    background-color: #f9fafb;
+}
+
+.lang-dropdown:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Panah Custom */
+.custom-arrow {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+    font-size: 10px;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+}
+
+/* Dukungan Mode Gelap (Dark Mode Optional) */
+@media (prefers-color-scheme: dark) {
+    .lang-dropdown {
+        background-color: #1f2937;
+        color: #f9fafb;
+        border-color: #374151;
+    }
+
+    .lang-dropdown:hover {
+        background-color: #374151;
+    }
+
+    .custom-arrow {
+        color: #9ca3af;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 40px;
+    color: #2c3e50;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 12px;
+}
+
+.guide-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+.guide-table th {
+    background: #2c7be5;
+    color: #fff;
+    padding: 14px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.guide-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.guide-table tr:nth-child(even) {
+    background: #f8f9fb;
+}
+
+.guide-table tr:hover {
+    background: #eef6ff;
+}
+
+section {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-left: 6px solid #2c7be5;
+    padding-left: 15px;
+    color: #2c7be5;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.phase {
+    border-left: 6px solid #27ae60;
+}
+
+.priority {
+    background: #eef6ff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.note {
+    background: #fff8dc;
+    border-left: 5px solid #f1c40f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+}
+
+@media(max-width:768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+}
+
+
+
+
+/* floater */
+
+
+
+.floating-btn:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+.lang-btn {
+    background-color: #1a1a1a;
+    border-color: #444;
+}
+
+.lang-btn:hover {
+    background-color: #333;
+}
+
+/* Panel Overlay (Fullscreen dari Kanan) */
+.drawer-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 15, 15, 0.98);
+    color: #f0f0f0;
+    z-index: 10000;
+    transition: right 0.4s ease-in-out;
+    overflow-y: auto;
+}
+
+.drawer-overlay.active {
+    right: 0;
+}
+
+.drawer-content {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #ff4500;
+}
+
+.quick-tips {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ff4500;
+    margin-top: 15px;
+}
+
+.quick-tips ul {
+    line-height: 1.8;
+}
+
+/* Container Tombol Melayang */
+.floating-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Base Style Tombol Melayang */
+.floating-btn {
+    padding: 10px 16px;
+    background-color: #8b0000;
+    color: #fff;
+    border: 1px solid #ff4500;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, background-color 0.2s;
+    outline: none;
+}
+
+.action-btn:hover {
+    background-color: #a00000;
+    transform: scale(1.05);
+}
+
+/* Style Khusus Dropdown Bahasa */
+.lang-dropdown {
+    background-color: #1a1a1a;
+    border-color: #555;
+    color: #fff;
+    appearance: none;
+    /* Merapikan tampilan bawaan browser */
+    -webkit-appearance: none;
+    padding-right: 25px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 18px;
+}
+
+.lang-dropdown option {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Format Khusus Teks Bahasa Arab (RTL) */
+[dir="rtl"] .quick-tips {
+    border-left: none;
+    border-right: 4px solid #ff4500;
+}
+
+[dir="rtl"] .close-btn {
+    right: auto;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.table-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+/* Control Topbar */
+.table-header-control {
+    background-color: var(--primary-purple);
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.select-dropdown select {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calc-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Layout Content */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.table-scroll {
+    flex: 1;
+    overflow-x: auto;
+}
+
+/* Styling Tabel */
+.strategy-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.strategy-table th {
+    background-color: var(--header-dark);
+    color: white;
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.filter-icon {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-left: 4px;
+}
+
+.add-btn {
+    background: white;
+    color: var(--header-dark);
+    border: none;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Pewarnaan Baris Berdasarkan Data Attribute */
+.strategy-table tbody tr {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.strategy-table tbody tr[data-building="left"] {
+    background-color: var(--left-bg);
+}
+
+.strategy-table tbody tr[data-building="right"] {
+    background-color: var(--right-bg);
+}
+
+.strategy-table td {
+    padding: 8px 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.strategy-table td.power {
+    font-weight: 700;
+}
+
+/* Styling Legend Box */
+.legend-box {
+    width: 160px;
+    padding-top: 10px;
+}
+
+.legend-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.color-indicator {
+    width: 50px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.bg-left {
+    background-color: var(--left-bg);
+}
+
+.bg-right {
+    background-color: var(--right-bg);
+}
+
+/* ==========================================
+   RESPONSIVE LAYOUT
+   ========================================== */
+
+/* 1. Kontainer Utama */
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 2. Layout Wrapper (Tabel + Legend) */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 16px;
+}
+
+/* 3. Wrapper Tabel dengan Scrollbar Halus */
+.table-scroll {
+    flex: 1;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scroll di iOS */
+}
+
+/* Memastikan tabel memiliki lebar minimum agar tidak gepeng */
+.strategy-table {
+    min-width: 480px;
+}
+
+/* ==========================================
+   BREAKPOINT: MOBILE / SCREEN < 768px
+   ========================================== */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        /* Legend pindah ke bawah tabel */
+        padding: 10px;
+        gap: 16px;
+    }
+
+    .legend-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        background: #f9fafb;
+        padding: 10px 14px;
+        border-radius: 6px;
+        border: 1px solid #e5e7eb;
+    }
+
+    .legend-header {
+        margin-bottom: 0;
+        margin-right: 8px;
+        white-space: nowrap;
+    }
+
+    .legend-item {
+        margin-bottom: 0;
+    }
+
+    .color-indicator {
+        width: 36px;
+        height: 20px;
+    }
+
+    .strategy-table th,
+    .strategy-table td {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+.legend-header {
+    color: black;
+}
+
+.legend-item span {
+    color: black;
+}

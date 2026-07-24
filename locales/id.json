@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ Panduan Pertempuran Swordland",
+    "generals": {
+        "title": "Umum",
+        "tip1": "Pantau pergerakan musuh.",
+        "tip2": "Jadilah yang pertama merebut bangunan tanpa penjagaan di Fase 1.",
+        "tip3": "Jangan menyimpan percepatan pemulihan gratis: Pemulihan di Swordland sepenuhnya gratis.",
+        "tip4": "Jangan menyimpan percepatan pawai gratis: Pengurangan waktu pawai di Swordland sepenuhnya gratis."
+    },
+    "understandings": {
+        "title": "Cara Mendapatkan Poin Peninggalan",
+        "description": "Memahami sumber poin membantu Anda memilih strategi terbaik.",
+        "table": {
+            "headers": {
+                "source": "Sumber",
+                "alliancePoints": "Poin Aliansi",
+                "personalPoints": "Poin Pribadi",
+                "notes": "Catatan"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "Perebutan Pertama",
+                    "alliance": "Bonus besar satu kali",
+                    "personal": "Bonus besar satu kali",
+                    "note": "Aliansi pertama yang merebut bangunan menerima bonus besar."
+                },
+                "buildingOccupation": {
+                    "source": "Pendudukan Bangunan",
+                    "alliance": "Poin berkelanjutan",
+                    "personal": "Poin berkelanjutan",
+                    "note": "Candi Pedang dan Tempat Suci memberikan penghasilan poin tertinggi."
+                },
+                "lootCrates": {
+                    "source": "Peti Jarahan",
+                    "alliance": "Poin bonus",
+                    "personal": "Poin bonus",
+                    "note": "Muncul saat bangunan berhasil direbut dari musuh."
+                },
+                "undercellars": {
+                    "source": "Ruang Bawah Tanah",
+                    "alliance": "Poin kejutan",
+                    "personal": "Poin kejutan",
+                    "note": "Muncul secara acak selama Akhir Permainan. Pantau peta kecil."
+                },
+                "combatAttack": {
+                    "source": "Pertempuran (Penyerangan)",
+                    "alliance": "Tidak ada",
+                    "personal": "80 poin per 10.000 Daya musuh yang dikalahkan",
+                    "note": "Hanya memberikan Poin Pribadi."
+                },
+                "combatDefense": {
+                    "source": "Pertempuran (Pertahanan)",
+                    "alliance": "Tidak ada",
+                    "personal": "40 poin per 10.000 Daya musuh yang dikalahkan",
+                    "note": "Setengah dari poin yang diperoleh dari menyerang."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "Bangunan Strategis",
+        "description": "Bangunan-bangunan ini memberikan bonus kuat dan harus direbut segera setelah tersedia.",
+        "table": {
+            "headers": {
+                "building": "Bangunan",
+                "effect": "Efek",
+                "available": "Tersedia"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "Aula Reformasi",
+                    "effect": "+15 persen Kerusakan Diberikan<br>-15 persen Kerusakan Diterima",
+                    "available": "Fase 2 (45:00)"
+                },
+                "bellTower": {
+                    "building": "Menara Lonceng",
+                    "effect": "Mengurangi waktu perebutan bangunan sebesar 50 persen",
+                    "available": "Fase 1 (57:00)"
+                },
+                "royalStables": {
+                    "building": "Kandang Kuda Kerajaan",
+                    "effect": "Mengurangi jeda waktu teleportasi sebesar 50 persen (10 mnt → 5 mnt)",
+                    "available": "Fase 1 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "Kamp Tentara Bayaran",
+                    "effect": "Membawa Anda dapat mengirim Tentara Bayaran untuk menyerang bangunan musuh.",
+                    "available": "Fase 2 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "Penyerang",
+        "primaryObjectives": "Tujuan Utama",
+        "primaryObjectives1": "Rebut bangunan yang ditentukan. Tugaskan 1–2 penyerang ke setiap bangunan bersama 2–3 defender. Gunakan reli jika diperlukan.",
+        "primaryObjectives2": "Amankan semua bangunan prioritas dalam 10 menit pertama.",
+        "primaryObjectives3": "Pertahankan kendali setelah merebut.",
+        "primaryObjectives4": "Fokus pada Kandang Kuda, Tempat Suci, dan Menara Lonceng terlebih dahulu.",
+        "primaryObjectives5": "Pada menit ke-12, rebut Candi Pedang dan Kamp Tentara Bayaran.",
+        "primaryObjectives6": "Setelah bangunan prioritas diamankan, mulailah membakar kota musuh.",
+        "responsibilities": "Tanggung Jawab",
+        "responsibilities1": "Jaga bangunan yang direbut dengan formasi pertahanan terkuat Anda.",
+        "responsibilities2": "Bantu reli terdekat kapan pun memungkinkan.",
+        "responsibilities3": "Jika kewalahan, pindah ke bangunan prioritas lainnya.",
+        "responsibilities4": "Tetap berada di target yang ditugaskan kecuali ada instruksi lain."
+    },
+    "defenders": {
+        "title": "Pembersi/defender",
+        "title.primaryObjectives": "Tujuan Utama",
+        "title.primaryObjectives1": "Ketahui bangunan mana yang ditugaskan untuk Anda pertahankan.",
+        "title.primaryObjectives2": "Kenali penyerang yang ditugaskan bersama Anda.",
+        "title.primaryObjectives3": "Bantu reli penyerang menggunakan Chenko dan Yeonwoo.",
+        "title.responsibilities": "Tanggung Jawab",
+        "responsibilities1": "Setelah bangunan direbut, segera kirim pawai pertahanan terkuat Anda.",
+        "responsibilities2": "Niatkan Saul atau Gordon di slot pahlawan sebelah kiri.",
+        "responsibilities3": "Lanjutkan memperkuat reli.",
+        "responsibilities4": "Sebarkan kota Anda untuk menghindari memberi musuh target yang mudah.",
+        "responsibilities5": "Bantu kota sekutu kapan pun dibutuhkan.",
+        "responsibilities6": "Jika bangunan hilang, segera kumpulkan sumber daya terdekat.",
+        "responsibilities7": "Kumpulkan Ruang Bawah Tanah menggunakan pawai tersisa.",
+        "responsibilities8": "Pertahankan kendali atas Kandang Kuda, Tempat Suci, Candi Pedang, Kamp Tentara Bayaran, dan dua Biara jika memungkinkan."
+    },
+    "phase1": {
+        "title": "Fase 1 — 57:00 hingga 45:01",
+        "priorityOrder": "Prioritas Perebutan",
+        "note": {
+            "title": "Penting",
+            "tip1": "Teleportasi pertama Anda gratis—gunakan untuk mengambil posisi di dekat target yang ditugaskan segera.",
+            "tip2": "Bangunan kosong adalah kesempatan yang terbuang—bahkan defender lemah bisa mencegah perebutan solo.",
+            "tip3": "Penyerang tambahan harus membakar kota musuh untuk memaksa teleportasi, mengganggu posisi mereka.",
+            "tip4": "defender tidak boleh berdiam di markas. Sebaliknya, berpindah tempatlah di antara dua atau tiga bangunan terdekat di mana musuh tidak mudah mendeteksi kota Anda.",
+            "tip5": "Jangan terlalu fokus pada satu bangunan; sebarkan defender di beberapa struktur.",
+            "tip6": "Kandang Kuda dan Tempat Suci tetap menjadi prioritas tertinggi."
+        }
+    },
+    "buildings": {
+        "stables": "Kandang Kuda",
+        "furthestSanctum": "Tempat Suci Terjauh",
+        "closestSanctum": "Tempat Suci Terdekat",
+        "bellTower": "Menara Lonceng",
+        "upperAbbey": "Biara Atas",
+        "lowerAbbey": "Biara Bawah",
+        "swordShrine": "Candi Pedang",
+        "mercenaryCamp": "Kamp Tentara Bayaran",
+        "reformation": "Reformasi (hanya jika aliansi Anda memiliki keunggulan jelas)",
+        "sanctums": "Tempat Suci"
+    },
+    "phase2": {
+        "title": "Fase 2 ― 45:00",
+        "priorityOrder": "Urutan Prioritas"
+    },
+    "phase3": {
+        "title": "Fase 3 ― Akhir Permainan (15 Menit Terakhir)",
+        "tip1": "Rebut Ruang Bawah Tanah menggunakan pawai tersisa.",
+        "tip2": "Pertahankan kendali atas semua bangunan yang diduduki.",
+        "tip3": "defender harus segera meminta bantuan jika berada di bawah tekanan.",
+        "tip4": "Jika memungkinkan, penyerang harus terus membakar kota musuh menggunakan reli atau serangan solo.",
+        "note": {
+            "title": "Strategi Dorongan Terakhir (pada 06:00) jika kita kalah poin atau mulai kewalahan",
+            "tip1": "Luncurkan reli ganda ke Candi Pedang, dipimpin oleh dua pemimpin reli terkuat kita. Rasio 50-20-30.",
+            "tip2": "Semua pemain yang tersedia harus siap bergabung dalam reli dengan segera.",
+            "tip3": "Jika reli berhasil, defender yang memiliki item Teleportasi harus segera teleportasi di sekitar Candi Pedang (tengah).",
+            "tip4": "Amankan dan kumpulkan Peti Jarahan sebelum musuh bisa menjangkaunya."
+        }
+    },
+    "assignment": {
+        "title": "⚔ Penugasan",
+        "legion1": "Legiun 1",
+        "legion2": "Legiun 2",
+        "legion3": "Legiun 3",
+        "table": {
+            "name": "Nama",
+            "squadPower": "Kekuatan Pasukan",
+            "building": "Bangunan",
+            "position": "Posisi"
+        },
+        "legend": {
+            "title": "Kode Warna"
+        },
+        "sides": {
+            "left": "Sisi Kiri",
+            "right": "Sisi Kanan"
+        },
+        "roles": {
+            "attacker": "Penyerang",
+            "defender": "Penahan/Bertahan"
+        }
+    }
+}

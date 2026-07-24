@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ Swordland Gevegsinstruksies",
+    "generals": {
+        "title": "Algemeen",
+        "tip1": "Hou die vyand se bewegings noukeurig dop.",
+        "tip2": "Wees die eerste om onbewaakte geboue in Fase 1 te verower.",
+        "tip3": "Moenie gratis genesingsversnellings opgaar nie: Genesing in Swordland is heeltemal gratis.",
+        "tip4": "Moenie gratis marsversnellings opgaar nie: Korter marstye in Swordland is heeltemal gratis."
+    },
+    "understandings": {
+        "title": "Hoe om Relikwiepunte te verdien",
+        "description": "Om te verstaan waar punte vandaan kom, help jou om die beste strategie te kies.",
+        "table": {
+            "headers": {
+                "source": "Bron",
+                "alliancePoints": "Alliansiepunte",
+                "personalPoints": "Persoonlike Punte",
+                "notes": "Notas"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "Eerste Verowering",
+                    "alliance": "Groot eenmalige bonus",
+                    "personal": "Groot eenmalige bonus",
+                    "note": "Die eerste alliansie wat 'n gebou verower, ontvang 'n groot puntemas bonus."
+                },
+                "buildingOccupation": {
+                    "source": "Gebou-besetting",
+                    "alliance": "Deurlopende punte",
+                    "personal": "Deurlopende punte",
+                    "note": "Swaard-altaar (Sword Shrine) en Sanctums lewer die hoogste punte op."
+                },
+                "lootCrates": {
+                    "source": "Buitkiste (Loot Crates)",
+                    "alliance": "Bonuspunte",
+                    "personal": "Bonuspunte",
+                    "note": "Verskyn wanneer 'n gebou suksesvol van die vyand oorgeneem word."
+                },
+                "undercellars": {
+                    "source": "Kelders (Undercellars)",
+                    "alliance": "Verrassingspunte",
+                    "personal": "Verrassingspunte",
+                    "note": "Verskyn ewekansig gedurende die eindspel. Hou die klein kaart dop."
+                },
+                "combatAttack": {
+                    "source": "Geveg (Aanval)",
+                    "alliance": "Geen",
+                    "personal": "80 punte per 10,000 vyandelike Krag verslaan",
+                    "note": "Gee slegs Persoonlike Punte."
+                },
+                "combatDefense": {
+                    "source": "Geveg (Verdediging)",
+                    "alliance": "Geen",
+                    "personal": "40 punte per 10,000 vyandelike Krag verslaan",
+                    "note": "Die helfte van die punte wat met 'n aanval verdien word."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "Strategiese Geboue",
+        "description": "Hierdie geboue bied kragtige bonusse en moet dadelik verower word sodra hulle beskikbaar is.",
+        "table": {
+            "headers": {
+                "building": "Gebou",
+                "effect": "Effek",
+                "available": "Beskikbaar"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "Hervormingssaal (Hall of Reformation)",
+                    "effect": "+15 persent Skade Aangerig<br>-15 persent Skade Ontvang",
+                    "available": "Fase 2 (45:00)"
+                },
+                "bellTower": {
+                    "building": "Kloktoring (Bell Tower)",
+                    "effect": "Verminder gebouveroweringstyd met 50 persent",
+                    "available": "Fase 1 (57:00)"
+                },
+                "royalStables": {
+                    "building": "Koninklike Stalle (Royal Stables)",
+                    "effect": "Verminder herlaaityd vir verplasing met 50 persent (10 min → 5 min)",
+                    "available": "Fase 1 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "Huursoldaatkamp (Mercenary Camp)",
+                    "effect": "Laat jou toe om Huursoldate te stuur om vyandelike geboue aan te val.",
+                    "available": "Fase 2 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "Aanvallers",
+        "primaryObjectives": "Hoofdoelwitte",
+        "primaryObjectives1": "Verower die toegewese geboue. Wys 1–2 aanvallers saam met 2–3 verdedigers aan vir elke gebou. Gebruik saamtrekke (Rally) indien nodig.",
+        "primaryObjectives2": "Beveilig alle prioriteitsgeboue binne die eerste 10 minute.",
+        "primaryObjectives3": "Behou beheer na verowering.",
+        "primaryObjectives4": "Fokus eers op Stalle, Sanctums en die Kloktoring.",
+        "primaryObjectives5": "Op minuut 12, verower die Swaard-altaar en Huursoldaatkamp.",
+        "primaryObjectives6": "Sodra prioriteitsgeboue beveilig is, begin om die vyand se stede te brand.",
+        "responsibilities": "Verantwoordelikhede",
+        "responsibilities1": "Beskerm verowerde geboue met jou sterkste verdedigingsmagte.",
+        "responsibilities2": "Ondersteun nabygeleë saamtrekke wanneer moontlik.",
+        "responsibilities3": "As jy oorweldig word, skuif na 'n ander prioriteitsgebou.",
+        "responsibilities4": "Bly by jou toegewese teiken tensy anders opdrag gegee word."
+    },
+    "defenders": {
+        "title": "Verdedigers",
+        "title.primaryObjectives": "Hoofdoelwitte",
+        "title.primaryObjectives1": "Weet watter gebou aan jou toegewys is om te verdedig.",
+        "title.primaryObjectives2": "Identifiseer die aanvallers wat saam met jou opgedeel is.",
+        "title.primaryObjectives3": "Ondersteun aanvallers se saamtrekke deur Chenko en Yeonwoo te gebruik.",
+        "title.responsibilities": "Verantwoordelikhede",
+        "responsibilities1": "Sodra 'n gebou verower is, stuur dadelik jou sterkste verdedigingsmagte.",
+        "responsibilities2": "Plaas Saul of Gordon in die linker helde-gleuf.",
+        "responsibilities3": "Hou aan om saamtrekke te versterk.",
+        "responsibilities4": "Versprei julle stede sodat julle nie 'n maklike teiken vir die vyand bied nie.",
+        "responsibilities5": "Help bondgenote se stede wanneer nodig.",
+        "responsibilities6": "As 'n gebou verlore gaan, versamel dadelik nabygeleë hulpbronne.",
+        "responsibilities7": "Oorskat Kelders (Undercellars) met oorblywende magte.",
+        "responsibilities8": "Behou beheer oor Stalle, Sanctums, Swaard-altaar, Huursoldaatkamp en twee Abtdye indien moontlik."
+    },
+    "phase1": {
+        "title": "Fase 1 — 57:00 tot 45:01",
+        "priorityOrder": "Veroweringsprioriteit",
+        "note": {
+            "title": "Belangrik",
+            "tip1": "Jou eerste verplasing is gratis—gebruik dit dadelik om posisie te neem naby jou toegewese teiken.",
+            "tip2": "Leë geboue is 'n gemorste geleentheid—selfs 'n swak verdediger kan 'n enkeling se verowering keer.",
+            "tip3": "Ekstra aanvallers moet die vyand se stede aansteek om verplasing te forseer en hul opstelling te ontwrig.",
+            "tip4": "Verdedigers moenie in die basis bly sit nie. Skuif eerder tussen twee of drie nabygeleë geboue waar die vyand julle nie maklik kan opspoor nie.",
+            "tip5": "Moenie al julle kragte op een gebou fokus nie; versprei verdedigers oor verskeie strukture.",
+            "tip6": "Stalle en Sanctums bly die hoogste prioriteit."
+        }
+    },
+    "buildings": {
+        "stables": "Stalle (Stables)",
+        "furthestSanctum": "Verste Sanctum",
+        "closestSanctum": "Naaste Sanctum",
+        "bellTower": "Kloktoring (Bell Tower)",
+        "upperAbbey": "Boonste Abdij (Upper Abbey)",
+        "lowerAbbey": "Onderste Abdij (Lower Abbey)",
+        "swordShrine": "Swaard-altaar (Sword Shrine)",
+        "mercenaryCamp": "Huursoldaatkamp (Mercenary Camp)",
+        "reformation": "Hervorming (Slegs as jou alliansie 'n duidelike voorsprong het)",
+        "sanctums": "Sanctums"
+    },
+    "phase2": {
+        "title": "Fase 2 ― 45:00",
+        "priorityOrder": "Prioriteitsvolgorde"
+    },
+    "phase3": {
+        "title": "Fase 3 ― Eindspel (Laaste 15 Minute)",
+        "tip1": "Verower Kelders (Undercellars) met oorblywende magte.",
+        "tip2": "Behou beheer oor alle besette geboue.",
+        "tip3": "Verdedigers moet dadelik hulp vra as hulle onder druk verkeer.",
+        "tip4": "Indien moontlik, moet aanvallers aanhoudend die vyand se stede aansteek met saamtrekke of enkel-aanvalle.",
+        "note": {
+            "title": "Laaste Poging Strategie (op 06:00) as ons punte agterweë bly of onderdruk word",
+            "tip1": "Loods 'n dubbele saamtrek (Double Rally) na die Swaard-altaar, gelei deur ons twee sterkste leiers. Verhouding 50-20-30.",
+            "tip2": "Alle beskikbare spelers moet gereed wees om dadelik aan die saamtrek deel te neem.",
+            "tip3": "As die saamtrek suksesvol is, moet verdedigers met 'n Verplasingsitem dadelik om die Swaard-altaar (middel) verplaas.",
+            "tip4": "Beveilig en versamel Buitkiste (Loot Crates) voordat die vyand dit kan bereik."
+        }
+    },
+    "assignment": {
+        "title": "⚔ Toewysing",
+        "legion1": "Legioen 1",
+        "legion2": "Legioen 2",
+        "legion3": "Legioen 3",
+        "table": {
+            "name": "Naam",
+            "squadPower": "Span Krag",
+            "building": "Gebou",
+            "position": "Posisie"
+        },
+        "legend": {
+            "title": "Kleurgekodeer"
+        },
+        "sides": {
+            "left": "Linkerkant",
+            "right": "Regterkant"
+        },
+        "roles": {
+            "attacker": "Aanvaller",
+            "defender": "Verdediger"
+        }
+    }
+}

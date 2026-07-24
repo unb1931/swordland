@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ Gabay sa Labanan sa Swordland",
+    "generals": {
+        "title": "Pangkalahatan",
+        "tip1": "Bantayan ang mga galaw ng kalaban.",
+        "tip2": "Maging una sa pag-agaw ng mga walang bantay na gusali sa Phase 1.",
+        "tip3": "Huwag manghinayang gamitin ang free healing speedups: Ang pagpapagaling sa Swordland ay libre.",
+        "tip4": "Huwag manghinayang gamitin ang free march speedups: Ang bawas sa oras ng pagmamartsa sa Swordland ay libre."
+    },
+    "understandings": {
+        "title": "Paano Kumita ng Relic Points",
+        "description": "Ang pag-unawa kung saan nagmumula ang mga puntos ay tumutulong sa iyo na pumili ng pinakamahusay na diskarte.",
+        "table": {
+            "headers": {
+                "source": "Pinagmulan",
+                "alliancePoints": "Puntos ng Alyansa",
+                "personalPoints": "Personal na Puntos",
+                "notes": "Mga Tala"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "Unang Pag-agaw",
+                    "alliance": "Malaking isang beses na bonus",
+                    "personal": "Malaking isang beses na bonus",
+                    "note": "Ang unang alyansa na makaagaw ng gusali ay makakatanggap ng malaking bonus."
+                },
+                "buildingOccupation": {
+                    "source": "Pagsakop sa Gusali",
+                    "alliance": "Patuloy na puntos",
+                    "personal": "Patuloy na puntos",
+                    "note": "Ang Sword Shrine at Sanctums ang nagbibigay ng pinakamataas na kita ng puntos."
+                },
+                "lootCrates": {
+                    "source": "Mga Loot Crate",
+                    "alliance": "Bonus na puntos",
+                    "personal": "Bonus na puntos",
+                    "note": "Lumalabas kapag ang isang gusali ay naagaw mula sa kalaban."
+                },
+                "undercellars": {
+                    "source": "Mga Undercellar",
+                    "alliance": "Biglang dagdag na puntos",
+                    "personal": "Biglang dagdag na puntos",
+                    "note": "Lumalabas nang random sa huling bahagi ng laro (Endgame). Bantayan ang minimap."
+                },
+                "combatAttack": {
+                    "source": "Labanan (Pag-atake)",
+                    "alliance": "Wala",
+                    "personal": "80 puntos bawat 10,000 Power ng kalaban na matatalo",
+                    "note": "Nagbibigay lamang ng Personal na Puntos."
+                },
+                "combatDefense": {
+                    "source": "Labanan (Pagtatanggol)",
+                    "alliance": "Wala",
+                    "personal": "40 puntos bawat 10,000 Power ng kalaban na matatalo",
+                    "note": "Kalahati lamang ng puntos na nakukuha mula sa pag-atake."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "Mga Estratehikong Gusali",
+        "description": "Ang mga gusaling ito ay nagbibigay ng malalakas na bonus at dapat agawin agad kapag naging available na.",
+        "table": {
+            "headers": {
+                "building": "Gusali",
+                "effect": "Epekto",
+                "available": "Available"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "Hall of Reformation",
+                    "effect": "+15 porsyento Bawas na Naibibigay<br>-15 porsyento Bawas na Natatanggap",
+                    "available": "Phase 2 (45:00)"
+                },
+                "bellTower": {
+                    "building": "Bell Tower",
+                    "effect": "Binabawasan ang oras ng pag-agaw sa gusali nang 50 porsyento",
+                    "available": "Phase 1 (57:00)"
+                },
+                "royalStables": {
+                    "building": "Royal Stables",
+                    "effect": "Binabawasan ang cooldown ng teleport nang 50 porsyento (10 min → 5 min)",
+                    "available": "Phase 1 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "Mercenary Camp",
+                    "effect": "Pinapayagan kang magpadala ng mga Mercenary upang umatake sa mga gusali ng kalaban.",
+                    "available": "Phase 2 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "Mga Tagaatake",
+        "primaryObjectives": "Mga Pangunahing Layunin",
+        "primaryObjectives1": "Agawin ang mga nakatalagang gusali. Magtalaga ng 1–2 tagaatake sa bawat gusali kasama ang 2–3 tagapagtanggol. Gumamit ng mga rally kung kinakailangan.",
+        "primaryObjectives2": "Iseguro ang lahat ng prayoridad na gusali sa loob ng unang 10 minuto.",
+        "primaryObjectives3": "Panatilihin ang kontrol pagkatapos maagaw.",
+        "primaryObjectives4": "Magpokus muna sa Stables, Sanctums, at Bell Tower.",
+        "primaryObjectives5": "Sa ikalawang 12 minuto, agawin ang Sword Shrine at Mercenary Camp.",
+        "primaryObjectives6": "Kapag maayos nang nakontrol ang mga prayoridad na gusali, simulan nang sunugin ang mga lungsod ng kalaban.",
+        "responsibilities": "Mga Tungkulin",
+        "responsibilities1": "Bantayan ang mga naagaw na gusali gamit ang iyong pinakamalakas na pormasyong pandepensa.",
+        "responsibilities2": "Sumuporta sa mga malapit na rally hangga't maaari.",
+        "responsibilities3": "Kapag nadadaig na, lumipat sa ibang prayoridad na gusali.",
+        "responsibilities4": "Manatili sa iyong nakatalagang layunin maliban kung may ibang utos."
+    },
+    "defenders": {
+        "title": "Mga Tagapagtanggol",
+        "title.primaryObjectives": "Mga Pangunahing Layunin",
+        "title.primaryObjectives1": "Alamin kung aling gusali ang nakatalaga sa iyo upang ipagtanggol.",
+        "title.primaryObjectives2": "Kilalanin ang nakatalagang tagaatake kasama mo.",
+        "title.primaryObjectives3": "Sumuporta sa mga rally ng tagaatake gamit sina Chenko at Yeonwoo.",
+        "title.responsibilities": "Mga Tungkulin",
+        "responsibilities1": "Kapag naagaw na ang gusali, magpadala agad ng iyong pinakamalakas na pormasyong pandepensa.",
+        "responsibilities2": "Ilagay si Saul o Gordon sa kaliwang slot ng hero.",
+        "responsibilities3": "Patuloy na magpadala ng suporta sa mga rally.",
+        "responsibilities4": "Ikalat ang inyong mga lungsod upang hindi maging madaling target ng kalaban.",
+        "responsibilities5": "Magpadala ng saklolo sa mga lungsod ng kakampi kapag kailangan.",
+        "responsibilities6": "Kapag naagaw ang gusali, kumuha agad ng mga mapagkukunan (resources) sa malapit.",
+        "responsibilities7": "Manguha ng mga Undercellar gamit ang natitirang mga tropa.",
+        "responsibilities8": "Panatilihin ang kontrol sa Stables, Sanctums, Sword Shrine, Mercenary Camp, at dalawang Abbeys hangga't maaari."
+    },
+    "phase1": {
+        "title": "Phase 1 — 57:00 hanggang 45:01",
+        "priorityOrder": "Prayoridad sa Pag-agaw",
+        "note": {
+            "title": "Mahalaga",
+            "tip1": "Libre ang iyong unang teleport—gamitin ito upang magpwesto agad malapit sa iyong nakatalagang target.",
+            "tip2": "Ang mga walang bantay na gusali ay sayang na pagkakataon—kahit ang mahihinang tagapagtanggol ay nakakahadlang sa solo capture.",
+            "tip3": "Ang mga karagdagang tagaatake ay dapat magsunog ng lungsod ng kalaban upang pilitin silang mag-teleport at masira ang kanilang pwesto.",
+            "tip4": "Ang mga tagapagtanggol ay hindi dapat manatili sa base. Sa halip, mag-teleport sa pagitan ng dalawa o tatlong kalapit na gusali kung saan hindi kayo madaling makikita ng kalaban.",
+            "tip5": "Huwag ibuhos ang lahat ng tao sa iisang gusali; ikalat ang mga tagapagtanggol sa iba't ibang pasilidad.",
+            "tip6": "Ang Stables at Sanctums ang nananatiling may pinakamataas na prayoridad."
+        }
+    },
+    "buildings": {
+        "stables": "Stables",
+        "furthestSanctum": "Pinakamalayong Sanctum",
+        "closestSanctum": "Pinakamalapit na Sanctum",
+        "bellTower": "Bell Tower",
+        "upperAbbey": "Upper Abbey",
+        "lowerAbbey": "Lower Abbey",
+        "swordShrine": "Sword Shrine",
+        "mercenaryCamp": "Mercenary Camp",
+        "reformation": "Reformation (kung may malinaw lamang na lamang ang inyong alyansa)",
+        "sanctums": "Sanctums"
+    },
+    "phase2": {
+        "title": "Phase 2 ― 45:00",
+        "priorityOrder": "Pagkakasunod-sunod ng Prayoridad"
+    },
+    "phase3": {
+        "title": "Phase 3 ― Endgame (Huling 15 Minuto)",
+        "tip1": "Kumuha ng mga Undercellar gamit ang natitirang mga tropa.",
+        "tip2": "Panatilihin ang kontrol sa lahat ng nakuhang gusali.",
+        "tip3": "Ang mga tagapagtanggol ay dapat humingi agad ng tulong kung nahihirapan na.",
+        "tip4": "Kung angkop, ang mga tagaatake ay dapat patuloy na magsunog ng lungsod ng kalaban gamit ang mga rally o solo attack.",
+        "note": {
+            "title": "Diskarte sa Huling Pagtulak (sa 06:00) kung tayo ay huli sa puntos o nadadaig na",
+            "tip1": "Magsagawa ng double rally sa Sword Shrine, na pinapangunahan ng ating dalawang pinakamalakas na rally leader. Ratio: 50-20-30.",
+            "tip2": "Lahat ng available na manlalaro ay dapat nakahandang sumali sa rally agad-agad.",
+            "tip3": "Kapag nagtagumpay ang rally, ang mga tagapagtanggol na may Teleport item ay dapat mag-teleport agad sa paligid ng Sword Shrine (gitna).",
+            "tip4": "Kunin at ipunin ang mga Loot Crate bago pa makarating ang kalaban."
+        }
+    },
+    "assignment": {
+        "title": "⚔ Pagtatalaga",
+        "legion1": "Legyon 1",
+        "legion2": "Legyon 2",
+        "legion3": "Legyon 3",
+        "table": {
+            "name": "Pangalan",
+            "squadPower": "Lakas ng Siyudad",
+            "building": "Gusali",
+            "position": "Posisyon"
+        },
+        "legend": {
+            "title": "Kultura ng Kulay"
+        },
+        "sides": {
+            "left": "Kailangang Kaliwa",
+            "right": "Kailangang Kanan"
+        },
+        "roles": {
+            "attacker": "Tagataguyod",
+            "defender": "Tagapagtanggol"
+        }
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "heroText": "⚔ Guide de Bataille de Choc du Glaive",
+    "generals": {
+        "title": "Généralités",
+        "tip1": "Surveillez les mouvements ennemis.",
+        "tip2": "Soyez le premier à capturer les bâtiments incontestés lors de la Phase 1.",
+        "tip3": "Ne conservez pas inutilement les accélérateurs de soin gratuits : le soin dans Swordland est gratuit.",
+        "tip4": "Ne conservez pas inutilement les accélérateurs de marche gratuits : la réduction du temps de marche dans Swordland est gratuite."
+    },
+    "understandings": {
+        "title": "Comment Gagner des Points de Relique",
+        "description": "Comprendre la provenance des points vous aide à choisir la meilleure stratégie.",
+        "table": {
+            "headers": {
+                "source": "Source",
+                "alliancePoints": "Points d'Alliance",
+                "personalPoints": "Points Personnels",
+                "notes": "Remarques"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "Première Capture",
+                    "alliance": "Grand bonus unique",
+                    "personal": "Grand bonus unique",
+                    "note": "La première alliance à capturer un bâtiment reçoit un bonus majeur."
+                },
+                "buildingOccupation": {
+                    "source": "Occupation de Bâtiment",
+                    "alliance": "Points continus",
+                    "personal": "Points continus",
+                    "note": "Le Sanctuaires de l'Épée et les Sanctuaires offrent le revenu de points le plus élevé."
+                },
+                "lootCrates": {
+                    "source": "Caisses de Butin",
+                    "alliance": "Points bonus",
+                    "personal": "Points bonus",
+                    "note": "Apparaissent lorsqu'un bâtiment est capturé à l'ennemi."
+                },
+                "undercellars": {
+                    "source": "Souterrains",
+                    "alliance": "Points de pointe",
+                    "personal": "Points de pointe",
+                    "note": "Apparaissent aléatoirement durant la fin de partie. Observez la mini-carte."
+                },
+                "combatAttack": {
+                    "source": "Combat (Attaque)",
+                    "alliance": "Aucun",
+                    "personal": "80 points par tranche de 10 000 Puissance ennemie vaincue",
+                    "note": "Accorde uniquement des points personnels."
+                },
+                "combatDefense": {
+                    "source": "Combat (Défense)",
+                    "alliance": "Aucun",
+                    "personal": "40 points par tranche de 10 000 Puissance ennemie vaincue",
+                    "note": "La moitié des points gagnés lors d'une attaque."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "Bâtiments Stratégiques",
+        "description": "Ces bâtiments fournissent de puissants bonus et doivent être capturés dès qu'ils deviennent disponibles.",
+        "table": {
+            "headers": {
+                "building": "Bâtiment",
+                "effect": "Effet",
+                "available": "Disponible"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "Salle de la Réforme",
+                    "effect": "+15  pour cent Dégâts Infligés<br>-15 pour cent Dégâts Subis",
+                    "available": "Phase 2 (45:00)"
+                },
+                "bellTower": {
+                    "building": "Clocher",
+                    "effect": "Réduit le temps de capture des bâtiments de 50 pour cent",
+                    "available": "Phase 1 (57:00)"
+                },
+                "royalStables": {
+                    "building": "Écuries Royales",
+                    "effect": "Réduit le temps de recharge du téléport de 50 pour cent (10 min → 5 min)",
+                    "available": "Phase 1 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "Camp de Mercenaires",
+                    "effect": "Vous permet d'envoyer des Mercenaires attaquer les bâtiments ennemis.",
+                    "available": "Phase 2 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "Attaquants",
+        "primaryObjectives": "Objectifs Principaux",
+        "primaryObjectives1": "Capturez les bâtiments assignés. Attribuez 1 à 2 attaquants par bâtiment avec 2 à 3 défenseurs. Utilisez des ralliements si nécessaire.",
+        "primaryObjectives2": "Séquencez et sécurisez tous les bâtiments prioritaires dans les 10 premières minutes.",
+        "primaryObjectives3": "Maintenez le contrôle après la capture.",
+        "primaryObjectives4": "Concentrez-vous d'abord sur les Écuries, les Sanctuaires et le Clocher.",
+        "primaryObjectives5": "À 12 minutes, capturez le Sanctuaire de l'Épée et le Camp de Mercenaires.",
+        "primaryObjectives6": "Une fois les bâtiments prioritaires sécurisés, commencez à brûler les villes ennemies.",
+        "responsibilities": "Responsabilités",
+        "responsibilities1": "Garnissez les bâtiments capturés avec votre formation défensive la plus puissante.",
+        "responsibilities2": "Soutenez les ralliements à proximité dès que possible.",
+        "responsibilities3": "Si vous êtes submergé, déplacez-vous vers un autre bâtiment prioritaire.",
+        "responsibilities4": "Restez à votre objectif assigné, sauf instruction contraire."
+    },
+    "defenders": {
+        "title": "Défenseurs",
+        "title.primaryObjectives": "Objectifs Principaux",
+        "title.primaryObjectives1": "Sachez quel bâtiment vous êtes assigné à défendre.",
+        "title.primaryObjectives2": "Identifiez votre attaquant assigné.",
+        "title.primaryObjectives3": "Soutenez les ralliements d'attaque en utilisant Chenko et Yeonwoo.",
+        "title.responsibilities": "Responsabilités",
+        "responsibilities1": "Lorsqu'un bâtiment est capturé, envoyez immédiatement votre marche défensive la plus forte.",
+        "responsibilities2": "Placez Saul ou Gordon dans l'emplacement de héros de gauche.",
+        "responsibilities3": "Continuez à renforcer les ralliements.",
+        "responsibilities4": "Dispersez vos villes pour éviter d'offrir des cibles faciles aux ennemis.",
+        "responsibilities5": "Renforcez les villes alliées chaque fois que nécessaire.",
+        "responsibilities6": "Si un bâtiment est perdu, rassemblez immédiatement les ressources à proximité.",
+        "responsibilities7": "Récoltez les Souterrains avec vos marches disponibles.",
+        "responsibilities8": "Maintenez le contrôle des Écuries, des Sanctuaires, du Sanctuaire de l'Épée, du Camp de Mercenaires et de deux Abbayes si possible."
+    },
+    "phase1": {
+        "title": "Phase 1 — 57:00 à 45:01",
+        "priorityOrder": "Priorité de Capture",
+        "note": {
+            "title": "Important",
+            "tip1": "Votre premier téléport est gratuit — utilisez-le pour vous positionner près de votre cible immédiatement",
+            "tip2": "Les bâtiments vides sont des opportunités gâchées — même des défenseurs faibles empêchent les captures solo",
+            "tip3": "Les attaquants secondaires doivent brûler les villes ennemies pour forcer des téléports et perturber leur placement.",
+            "tip4": "Les défenseurs ne doivent pas rester à la base. Téléportez-vous plutôt entre deux ou trois bâtiments proches où les ennemis ne vous repéreront pas facilement.",
+            "tip5": "Ne vous focalisez pas trop sur un seul bâtiment ; répartissez les défenseurs sur plusieurs structures",
+            "tip6": "Les Écuries et les Sanctuaires restent la priorité absolue."
+        }
+    },
+    "buildings": {
+        "stables": "Écuries",
+        "furthestSanctum": "Sanctuaire le Plus Éloigné",
+        "closestSanctum": "Sanctuaire le Plus Proche",
+        "bellTower": "Clocher",
+        "upperAbbey": "Abbaye Supérieure",
+        "lowerAbbey": "Abbaye Inférieure",
+        "swordShrine": "Sanctuaire de l'Épée",
+        "mercenaryCamp": "Camp de Mercenaires",
+        "reformation": "Réforme (uniquement si votre alliance a un avantage net)",
+        "sanctums": "Sanctuaires"
+    },
+    "phase2": {
+        "title": "Phase 2 ― 45:00",
+        "priorityOrder": "Ordre de Priorité"
+    },
+    "phase3": {
+        "title": "Phase 3 ― Fin de partie (15 Dernières Minutes)",
+        "tip1": "Capturez les Souterrains avec vos marches disponibles.",
+        "tip2": "Maintenez le contrôle de tous les bâtiments occupés.",
+        "tip3": "Les défenseurs doivent immédiatement demander du soutien s'ils sont sous pression.",
+        "tip4": "Si approprié, les attaquants doivent brûler continuellement les villes ennemies via des ralliements ou des attaques solo.",
+        "note": {
+            "title": "Stratégie de Poussée Finale (à 06:00) si nous perdons aux points ou sommes submergés",
+            "tip1": "Lancez un double ralliement sur le Sanctuaire de l'Épée, mené par nos deux plus forts chefs de ralliement. Ratio 50-20-30",
+            "tip2": "Tous les joueurs disponibles doivent être prêts à rejoindre le ralliement immédiatement.",
+            "tip3": "Si le ralliement réussit, les défenseurs possédant un téléporteur doivent immédiatement se téléporter autour du Sanctuaire de l'Épée (centre).",
+            "tip4": "Sécurisez et ramassez les Caisses de Butin avant que l'ennemi ne puisse les atteindre."
+        }
+    }
+}

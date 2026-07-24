@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ 剑之领地战术指南 聖劍爭奪",
+    "generals": {
+        "title": "通用须知",
+        "tip1": "时刻关注敌军动态。",
+        "tip2": "在第一阶段，优先占领无人防守的建筑。",
+        "tip3": "切勿囤积免费治疗加速：剑之领地内治疗完全免费。",
+        "tip4": "切勿囤积免费行军加速：剑之领地内行军加速完全免费。"
+    },
+    "understandings": {
+        "title": "圣物积分获取途径",
+        "description": "了解积分来源有助于制定最佳战术策略。",
+        "table": {
+            "headers": {
+                "source": "来源",
+                "alliancePoints": "联盟积分",
+                "personalPoints": "个人积分",
+                "notes": "备注"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "首次占领",
+                    "alliance": "巨额一次性奖励",
+                    "personal": "巨额一次性奖励",
+                    "note": "首个占领建筑的联盟将获得大量积分奖励。"
+                },
+                "buildingOccupation": {
+                    "source": "建筑占领",
+                    "alliance": "持续获得",
+                    "personal": "持续获得",
+                    "note": "圣剑神殿和圣坛提供最高的积分收益。"
+                },
+                "lootCrates": {
+                    "source": "战利品箱",
+                    "alliance": "额外积分",
+                    "personal": "额外积分",
+                    "note": "从敌方手中夺取建筑时生成。"
+                },
+                "undercellars": {
+                    "source": "地下地牢",
+                    "alliance": "爆发积分",
+                    "personal": "爆发积分",
+                    "note": "在决战阶段随机出现，请时刻关注小地图。"
+                },
+                "combatAttack": {
+                    "source": "战斗（进攻）",
+                    "alliance": "无",
+                    "personal": "每击败 10,000 敌军战力获得 80 积分",
+                    "note": "仅提供个人积分。"
+                },
+                "combatDefense": {
+                    "source": "战斗（防守）",
+                    "alliance": "无",
+                    "personal": "每击败 10,000 敌军战力获得 40 积分",
+                    "note": "获得的积分仅为进攻的一半。"
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "战略建筑",
+        "description": "这些建筑能提供强大增益，开放后应第一时间进行占领。",
+        "table": {
+            "headers": {
+                "building": "建筑",
+                "effect": "效果",
+                "available": "开放时间"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "革新大厅",
+                    "effect": "+百分之十五 造成伤害<br>-百分之十五 受到伤害",
+                    "available": "第二阶段 (45:00)"
+                },
+                "bellTower": {
+                    "building": "钟楼",
+                    "effect": "减少 百分之五十 的建筑占领时间",
+                    "available": "第一阶段 (57:00)"
+                },
+                "royalStables": {
+                    "building": "皇家马厩",
+                    "effect": "减少 百分之五十 的传送冷却时间（10分钟 → 5分钟）",
+                    "available": "第一阶段 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "雇佣兵营地",
+                    "effect": "允许派遣雇佣兵进攻敌方建筑。",
+                    "available": "第二阶段 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "进攻组",
+        "primaryObjectives": "主要目标",
+        "primaryObjectives1": "占领指定建筑。每个建筑分配 1–2 名攻城人员和 2–3 名防守人员，必要时发起集结。",
+        "primaryObjectives2": "在前 10 分钟内锁定并占领所有优先建筑。",
+        "primaryObjectives3": "占领后持续保持控制权。",
+        "primaryObjectives4": "优先攻占马厩、圣坛和钟楼。",
+        "primaryObjectives5": "比赛进行到 12 分钟时，攻占圣剑神殿和雇佣兵营地。",
+        "primaryObjectives6": "优先建筑稳定后，开始攻打并焚烧敌方城市。",
+        "responsibilities": "职责说明",
+        "responsibilities1": "使用你最强的防守阵容驻守已占领的建筑。",
+        "responsibilities2": "尽可能支援附近的集结攻击。",
+        "responsibilities3": "若局势无法抵挡，及时转移至其他优先建筑。",
+        "responsibilities4": "除非收到新指令，否则坚守指定目标。"
+    },
+    "defenders": {
+        "title": "防守组",
+        "title.primaryObjectives": "主要目标",
+        "title.primaryObjectives1": "明确自己被指派防守的建筑。",
+        "title.primaryObjectives2": "确认与你配合的进攻组队员。",
+        "title.primaryObjectives3": "使用 Chenko 和 Yeonwoo 支援队友发起进攻集结。",
+        "title.responsibilities": "职责说明",
+        "responsibilities1": "建筑被成功占领后，立即派遣最强防守部队前往驻守。",
+        "responsibilities2": "将 Saul 或 Gordon 放置在英雄左侧首位。",
+        "responsibilities3": "持续向集结部队提供兵力增援。",
+        "responsibilities4": "分散城市位置，避免给敌方提供集中攻击的目标。",
+        "responsibilities5": "在必要时协助增援盟友城市。",
+        "responsibilities6": "若丢掉建筑，立即采集附近资源。",
+        "responsibilities7": "利用空闲部队采集出现的地下地牢。",
+        "responsibilities8": "尽可能保持对马厩、圣坛、圣剑神殿、雇佣兵营地以及两座修道院的控制。"
+    },
+    "phase1": {
+        "title": "第一阶段 — 57:00 至 45:01",
+        "priorityOrder": "占领优先级",
+        "note": {
+            "title": "重要提示",
+            "tip1": "首次传送免费 — 请立即使用并落位至指定目标附近。",
+            "tip2": "无人防守的建筑是极大的浪费 — 即使是较弱的防守者也能阻止单人偷占。",
+            "tip3": "机动进攻人员应焚烧敌方城市以迫使其传送，打乱敌方阵型部署。",
+            "tip4": "防守人员切勿留在基地，应在附近两到三个建筑之间传送，避免轻易被敌人侦察。",
+            "tip5": "切勿将兵力过度集中于单一建筑，应合理分散至多个战略据点。",
+            "tip6": "马厩和圣坛始终是最高优先级的目标。"
+        }
+    },
+    "buildings": {
+        "stables": "马厩",
+        "furthestSanctum": "最远圣坛",
+        "closestSanctum": "最近圣坛",
+        "bellTower": "钟楼",
+        "upperAbbey": "上修道院",
+        "lowerAbbey": "下修道院",
+        "swordShrine": "圣剑神殿",
+        "mercenaryCamp": "雇佣兵营地",
+        "reformation": "革新大厅（仅在优势明显时考虑占领）",
+        "sanctums": "圣坛"
+    },
+    "phase2": {
+        "title": "第二阶段 ― 45:00",
+        "priorityOrder": "优先级顺序"
+    },
+    "phase3": {
+        "title": "第三阶段 ― 决战阶段（最后 15 分钟）",
+        "tip1": "派遣空闲部队抢占地下地牢。",
+        "tip2": "全力防守并维持所有已占领建筑的控制权。",
+        "tip3": "防守人员在面临巨大压力时必须第一时间请求盟友支援。",
+        "tip4": "在时机合适时，进攻人员应通过集结或单兵进攻持续焚烧敌方城市。",
+        "note": {
+            "title": "终局冲刺战术（倒计时 06:00）— 用于积分落后或局势不利时",
+            "tip1": "由两名最强集结车头对圣剑神殿发起双集结进攻，推荐兵种比例为 50-20-30。",
+            "tip2": "所有在场队员必须随时准备入队，第一时间填满集结。",
+            "tip3": "若集结成功拿下神殿，持有传送道具的防守人员需立即传送至圣剑神殿（中心）周围进行围防。",
+            "tip4": "在敌人赶到前快速抢夺并收集散落的战利品箱。"
+        }
+    },
+    "assignment": {
+        "title": "⚔ 分配任务",
+        "legion1": "军团 1",
+        "legion2": "军团 2",
+        "legion3": "军团 3",
+        "table": {
+            "name": "名字",
+            "squadPower": "小队战力",
+            "building": "建筑",
+            "position": "位置"
+        },
+        "legend": {
+            "title": "颜色标记"
+        },
+        "sides": {
+            "left": "左侧",
+            "right": "右侧"
+        },
+        "roles": {
+            "attacker": "进攻者",
+            "defender": "防守者"
+        }
+    }
+}

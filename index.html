@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swordland Battle Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="floating-controls">
+            <!-- Tombol Ganti Bahasa (Update) -->
+            <div class="lang-selector-container">
+
+                <div class="select-wrapper">
+                    <select id="langSelect" class="lang-dropdown">
+                        <option value="en">🌐 English</option>
+                        <option value="id">🇮🇩 Bahasa Indonesia</option>
+                        <option value="zh">🇨🇳 简体中文</option>
+                        <option value="af">🇿🇦 Afrikaans</option>
+                        <option value="tl">🇵🇭 Tagalog / Filipino</option>
+                        <option value="th">🇹🇭 ภาษาไทย</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                        <option value="hi">🇮🇳 हिन्दी</option>
+                    </select>
+                    <span class="custom-arrow">▼</span>
+                </div>
+            </div>
+
+            <!-- Tombol Buka Drawer -->
+            <button id="openGuideBtn" class="floating-btn">
+                ⚔️ <span data-i18n="assignment.title">Assignment</span>
+            </button>
+        </div>
+
+        <!-- Panel Off-Canvas / Side Overlay (Muncul dari kanan) -->
+        <div id="sideDrawer" class="drawer-overlay">
+            <div class="drawer-content">
+
+                <!-- Tombol Tutup (X) -->
+                <button id="closeGuideBtn" class="close-btn" aria-label="Tutup">&times;</button>
+
+                <!-- Isi Konten di Dalam Panel (Salinan/Konten Utama Kamu) -->
+                <div class="drawer-body">
+                    <h2 data-i18n="assignment.title">⚔ Assignment</h2>
+                    <div class="table-container">
+                        <!-- Header Control (Legion & Action) -->
+                        <div class="table-header-control">
+                            <div class="select-dropdown">
+                                <select id="legionSelect">
+                                    <option value="2" selected data-i18n="assignment.legion2">Legion 2</option>
+                                </select>
+                            </div>
+                            <button class="calc-btn" title="Calculator">📊</button>
+                        </div>
+
+                        <!-- Layout Utama (Tabel + Legend) -->
+                        <div class="content-wrapper">
+                            <!-- Tabel Utama -->
+                            <div class="table-scroll">
+                                <table class="strategy-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <span data-i18n="assignment.table.name">Name</span>
+                                                <span class="filter-icon">≡</span>
+                                            </th>
+                                            <th>
+                                                <span data-i18n="assignment.table.squadPower">Squad Power</span>
+                                                <span class="filter-icon">≡</span>
+                                            </th>
+                                            <th>
+                                                <span data-i18n="assignment.table.building">Building</span>
+                                                <button class="add-btn">+</button>
+                                                <span class="filter-icon">≡</span>
+                                            </th>
+                                            <th>
+                                                <span class="icon-tt">T<sub>T</sub></span>
+                                                <span data-i18n="assignment.table.position">Position</span>
+                                                <span class="filter-icon">≡</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="squadTableBody">
+                                        <!-- Baris data contoh -->
+                                        <tr data-building="right">
+                                            <td>Soul Edge Knight</td>
+                                            <td class="power">508</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.attacker">Attacker</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Yelloveᵁᴺᴮ</td>
+                                            <td class="power">457</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.attacker">Attacker</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>Kerlos</td>
+                                            <td class="power">409</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.attacker">Attacker</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>XxNeuneuxX</td>
+                                            <td class="power">386</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.attacker">Attacker</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>Andrik</td>
+                                            <td class="power">385</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>yohh</td>
+                                            <td class="power">357</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Daiia</td>
+                                            <td class="power">354</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>言翎兒</td>
+                                            <td class="power">349</td>
+                                            <td data-i18n="assignment.sides.left">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Justitia</td>
+                                            <td class="power">349</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Ydded</td>
+                                            <td class="power">349</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>Ainz Ooal Gown</td>
+                                            <td class="power">333</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Ramee_mohd</td>
+                                            <td class="power">332</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>REDDICKZ</td>
+                                            <td class="power">330</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>REDDICKZ</td>
+                                            <td class="power">323</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>GigaChad</td>
+                                            <td class="power">321</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.attacker">Attacker</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>عساف</td>
+                                            <td class="power">319</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Miguelmaba</td>
+                                            <td class="power">312</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Ayah Sher</td>
+                                            <td class="power">282</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="right">
+                                            <td>Tokyo</td>
+                                            <td class="power">275</td>
+                                            <td data-i18n="assignment.sides.right">Right Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>Secret</td>
+                                            <td class="power">275</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                        <tr data-building="left">
+                                            <td>CaroBd</td>
+                                            <td class="power">73</td>
+                                            <td data-i18n="assignment.sides.left">Left Side</td>
+                                            <td data-i18n="assignment.roles.defender">Defender</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Legend Warna (Color Coded Box) -->
+                            <div class="legend-box">
+                                <div class="legend-header" data-i18n="assignment.legend.title">Color Coded</div>
+                                <div class="legend-item">
+                                    <span class="color-indicator bg-left"></span>
+                                    <span data-i18n="assignment.sides.left">Left Side</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="color-indicator bg-right"></span>
+                                    <span data-i18n="assignment.sides.right">Right Side</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h1 data-i18n="heroText">⚔ Swordland Battle Guide</h1>
+        <section>
+
+            <h2 data-i18n="generals.title">Generals</h2>
+
+            <ul>
+
+
+                <li data-i18n="generals.tip1">Monitor enemy movements.</li>
+
+                <li data-i18n="generals.tip2">Be first to capture uncontested buildings in Phase 1.</li>
+                <li data-i18n="generals.tip3">Please don't hoard free healing speedups: Swordland healing is free.</li>
+                <li data-i18n="generals.tip4">Please don't hoard free march speedups: Swordland march time reduction is
+                    free.</li>
+
+            </ul>
+
+        </section>
+        <section>
+
+            <h2 data-i18n="understandings.title">How to Earn Relic Points</h2>
+
+            <strong>
+                <p data-i18n="understandings.description">
+                    Understanding where points come from helps you choose the best strategy.
+                </p>
+            </strong>
+
+            <div class="table-responsive">
+
+                <table class="guide-table">
+
+                    <thead>
+                        <tr>
+                            <th data-i18n="understandings.table.headers.source">Source</th>
+                            <th data-i18n="understandings.table.headers.alliancePoints">Alliance Points</th>
+                            <th data-i18n="understandings.table.headers.personalPoints">Personal Points</th>
+                            <th data-i18n="understandings.table.headers.notes">Notes</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.firstCapture.source">
+                                First Capture
+                            </td>
+                            <td data-i18n="understandings.table.rows.firstCapture.alliance">
+                                Large one-time bonus
+                            </td>
+                            <td data-i18n="understandings.table.rows.firstCapture.personal">
+                                Large one-time bonus
+                            </td>
+                            <td data-i18n="understandings.table.rows.firstCapture.note">
+                                The first alliance to capture a building receives a major bonus.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.buildingOccupation.source">
+                                Building Occupation
+                            </td>
+                            <td data-i18n="understandings.table.rows.buildingOccupation.alliance">
+                                Continuous points
+                            </td>
+                            <td data-i18n="understandings.table.rows.buildingOccupation.personal">
+                                Continuous points
+                            </td>
+                            <td data-i18n="understandings.table.rows.buildingOccupation.note">
+                                Sword Shrine and Sanctums provide the highest point income.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.lootCrates.source">
+                                Loot Crates
+                            </td>
+                            <td data-i18n="understandings.table.rows.lootCrates.alliance">
+                                Bonus points
+                            </td>
+                            <td data-i18n="understandings.table.rows.lootCrates.personal">
+                                Bonus points
+                            </td>
+                            <td data-i18n="understandings.table.rows.lootCrates.note">
+                                Spawn when a building is captured from the enemy.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.undercellars.source">
+                                Undercellars
+                            </td>
+                            <td data-i18n="understandings.table.rows.undercellars.alliance">
+                                Burst points
+                            </td>
+                            <td data-i18n="understandings.table.rows.undercellars.personal">
+                                Burst points
+                            </td>
+                            <td data-i18n="understandings.table.rows.undercellars.note">
+                                Appear randomly during the End Game. Watch the minimap.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.combatAttack.source">
+                                Combat (Attack)
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatAttack.alliance">
+                                None
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatAttack.personal">
+                                80 points per 10,000 enemy Power defeated
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatAttack.note">
+                                Only grants Personal Points.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="understandings.table.rows.combatDefense.source">
+                                Combat (Defense)
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatDefense.alliance">
+                                None
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatDefense.personal">
+                                40 points per 10,000 enemy Power defeated
+                            </td>
+                            <td data-i18n="understandings.table.rows.combatDefense.note">
+                                Half the points earned from attacking.
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+        <section>
+
+            <h2 data-i18n="strategicBuildings.title">Strategic Buildings</h2>
+
+            <strong>
+                <p data-i18n="strategicBuildings.description">
+                    These buildings provide powerful bonuses and should be captured as soon as they become available.
+                </p>
+
+            </strong>
+
+
+            <div class="table-responsive">
+
+                <table class="guide-table">
+
+                    <thead>
+
+                        <tr>
+                            <th data-i18n="strategicBuildings.table.headers.building">Building</th>
+                            <th data-i18n="strategicBuildings.table.headers.effect">Effect</th>
+                            <th data-i18n="strategicBuildings.table.headers.available">Available</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td data-i18n="strategicBuildings.table.rows.hallOfReformation.building">
+                                Hall of Reformation
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.hallOfReformation.effect">
+                                +15% Damage Dealt<br>-15% Damage Taken
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.hallOfReformation.available">
+                                Phase 2 (45:00)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="strategicBuildings.table.rows.bellTower.building">
+                                Bell Tower
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.bellTower.effect">
+                                Reduces building capture time by 50%
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.bellTower.available">
+                                Phase 1 (57:00)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="strategicBuildings.table.rows.royalStables.building">
+                                Royal Stables
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.royalStables.effect">
+                                Reduces teleport cooldown by 50% (10 min → 5 min)
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.royalStables.available">
+                                Phase 1 (57:00)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="strategicBuildings.table.rows.mercenaryCamp.building">
+                                Mercenary Camp
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.mercenaryCamp.effect">
+                                Allows you to send Mercenaries to attack enemy buildings.
+                            </td>
+
+                            <td data-i18n="strategicBuildings.table.rows.mercenaryCamp.available">
+                                Phase 2 (45:00)
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </section>
+
+        <section>
+
+            <h2 data-i18n="attackers.title">Attackers</h2>
+
+            <h3 data-i18n="attackers.primaryObjectives">Primary Objectives</h3>
+
+            <ul>
+                <li data-i18n="attackers.primaryObjectives1">Capture the assigned buildings. Assign 1–2 attackers to
+                    each building with 2–3 defenders. Use
+                    rallies when required.</li>
+
+                <li data-i18n="attackers.primaryObjectives2">Secure all priority buildings within the first 10 minutes.
+                </li>
+
+                <li data-i18n="attackers.primaryObjectives3">Maintain control after capture.</li>
+
+                <li data-i18n="attackers.primaryObjectives4">Focus on Stables, Sanctums, and Bell Tower first.</li>
+
+                <li data-i18n="attackers.primaryObjectives5">At 12 minutes, capture Sword Shrine and Mercenary Camp.
+                </li>
+
+                <li data-i18n="attackers.primaryObjectives6">Once priority buildings are secured, begin burning enemy
+                    cities.</li>
+
+            </ul>
+
+            <h3 data-i18n="attackers.responsibilities">Responsibilities</h3>
+
+            <ul>
+
+                <li data-i18n="attackers.responsibilities1">Garrison captured buildings with your strongest defensive
+                    formation.</li>
+
+                <li data-i18n="attackers.responsibilities2">Support nearby rallies whenever possible.</li>
+
+                <li data-i18n="attackers.responsibilities3">If overwhelmed, relocate to another priority building.</li>
+
+                <li data-i18n="attackers.responsibilities4">Remain at your assigned objective unless instructed
+                    otherwise.</li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2 data-i18n="defenders.title">Defenders</h2>
+
+            <h3 data-i18n="defenders.title.primaryObjectives">Primary Objectives</h3>
+
+            <ul>
+
+                <li data-i18n="defenders.title.primaryObjectives1">Know which building you are assigned to defend.</li>
+
+                <li data-i18n="defenders.title.primaryObjectives2">Identify your assigned attacker.</li>
+
+                <li data-i18n="defenders.title.primaryObjectives3">Support attacker rallies using Chenko and Yeonwoo.
+                </li>
+
+            </ul>
+
+            <h3 data-i18n="defenders.title.responsibilities">Responsibilities</h3>
+
+            <ul>
+
+                <li data-i18n="defenders.title.responsibilities1">After a building is captured, immediately send your
+                    strongest defensive march.</li>
+
+                <li data-i18n="defenders.title.responsibilities2">Place Saul or Gordon in the left hero slot.</li>
+
+                <li data-i18n="defenders.title.responsibilities3">Continue reinforcing rallies.</li>
+
+                <li data-i18n="defenders.title.responsibilities4">Spread your cities to avoid giving enemies easy
+                    targets.</li>
+
+                <li data-i18n="defenders.title.responsibilities5">Reinforce allied cities whenever needed.</li>
+
+                <li data-i18n="defenders.title.responsibilities6">If a building is lost, immediately gather nearby
+                    resources.</li>
+
+                <li data-i18n="defenders.title.responsibilities7">Gather Undercellars using spare marches.</li>
+
+                <li data-i18n="defenders.title.responsibilities8">Maintain control of Stables, Sanctums, Sword Shrine,
+                    Mercenary Camp, and two Abbeys whenever
+                    possible.</li>
+
+            </ul>
+
+        </section>
+
+
+
+
+
+
+        <section class="phase">
+
+            <h2 data-i18n="phase1.title">Phase 1 — 57:00 to 45:01</h2>
+
+            <div class="priority">
+
+                <h3 data-i18n="phase1.priorityOrder">Capture Priority</h3>
+
+                <ol>
+
+                    <li data-i18n="buildings.stables">Stables</li>
+
+                    <li data-i18n="buildings.furthestSanctum">Furthest Sanctum</li>
+
+                    <li data-i18n="buildings.closestSanctum">Closest Sanctum</li>
+
+                    <li data-i18n="buildings.bellTower">Bell Tower</li>
+
+                    <li data-i18n="buildings.upperAbbey">Upper Abbey</li>
+
+                    <li data-i18n="buildings.lowerAbbey">Lower Abbey</li>
+
+                </ol>
+
+            </div>
+
+            <div class="note">
+
+                <strong data-i18n="phase1.note.title">Important</strong>
+
+                <ul>
+
+                    <li data-i18n="phase1.note.tip1">Your first teleport is free—use it to position near your assigned
+                        target immediately</li>
+                    <li data-i18n="phase1.note.tip2">Empty buildings are wasted opportunities—even weak defenders
+                        prevent solo captures</li>
+                    <li data-i18n="phase1.note.tip3">Additional Attackers should burn enemy cities to force teleports,
+                        disrupting their positioning.
+                    </li>
+                    <li data-i18n="phase1.note.tip4">Defenders should not remain at the base. Instead, teleport between
+                        two or three nearby buildings
+                        where enemy players cannot easily spot your city.</li>
+                    <li data-i18n="phase1.note.tip5">Don't overcommit to one building; spread defenders across multiple
+                        structures</li>
+                    <li data-i18n="phase1.note.tip6">Stables and Sanctums remain the highest priority.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section class="phase">
+
+            <h2 data-i18n="phase2.title">Phase 2 ― 45:00</h2>
+
+            <div class="note">
+
+                <strong data-i18n="phase2.priorityOrder">Priority Order</strong>
+
+                <ul>
+
+                    <li data-i18n="buildings.swordShrine">Sword Shrine</li>
+
+                    <li data-i18n="buildings.mercenaryCamp">Mercenary Camp</li>
+
+                    <li data-i18n="buildings.reformation">Reformation (only if your alliance has a clear
+                        advantage)</li>
+
+                    <li data-i18n="buildings.sanctums">Sanctums</li>
+
+                    <li data-i18n="buildings.stables">Stables</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="phase">
+
+            <h2 data-i18n="phase3.title">Phase 3 ― Endgame (Final 15 Minutes)</h2>
+
+            <ul>
+                <li data-i18n="phase3.tip1">Capture Undercellars using spare marches.</li>
+                <li data-i18n="phase3.tip2">Maintain control of all occupied buildings.</li>
+
+                <li data-i18n="phase3.tip3">Defenders must immediately request support if under pressure.</li>
+
+                <li data-i18n="phase3.tip4">When appropriate, attackers should continuously burn enemy cities using
+                    rallies or solo attacks.
+                </li>
+
+            </ul>
+            <div class="note">
+
+                <strong data-i18n="phase3.note.title">Last Push Strategy (at 06:00) if we are losing on points or
+                    becoming overwhelmed</strong>
+                <ul>
+
+                    <li data-i18n="phase3.note.tip1">Launch a double rally on the Swordshrine, led by our two strongest
+                        rally leaders. ratio 50-20-30
+                    </li>
+
+                    <li data-i18n="phase3.note.tip2">All available players must be ready to join the rally immediately.
+                    </li>
+
+                    <li data-i18n="phase3.note.tip3">If the rally succeeds, defenders who have a Teleport item should
+                        immediately
+                        teleport around the Swordshrine (center).</li>
+
+                    <li data-i18n="phase3.note.tip4">Secure and collect the Loot Crates before the enemy can reach them.
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+
+        <footer data-i18n="heroText">
+
+            Swordland Battle Guide
+
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@3/i18nextHttpBackend.min.js"></script>
+</body>
+
+</html>
