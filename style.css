@@ -288,7 +288,7 @@ footer {
 /* Container Tombol Melayang */
 .floating-controls {
     position: fixed;
-    top: 20px;
+    top: 150px;
     right: 20px;
     z-index: 999;
     display: flex;
