@@ -28,7 +28,7 @@
                     "source": "Pendudukan Bangunan",
                     "alliance": "Poin berkelanjutan",
                     "personal": "Poin berkelanjutan",
-                    "note": "Candi Pedang dan Tempat Suci memberikan penghasilan poin tertinggi."
+                    "note": "Bangunan Pedang Tengah dan Tempat Suci memberikan penghasilan poin tertinggi."
                 },
                 "lootCrates": {
                     "source": "Peti Jarahan",
@@ -97,7 +97,7 @@
         "primaryObjectives2": "Amankan semua bangunan prioritas dalam 10 menit pertama.",
         "primaryObjectives3": "Pertahankan kendali setelah merebut.",
         "primaryObjectives4": "Fokus pada Kandang Kuda, Tempat Suci, dan Menara Lonceng terlebih dahulu.",
-        "primaryObjectives5": "Pada menit ke-12, rebut Candi Pedang dan Kamp Tentara Bayaran.",
+        "primaryObjectives5": "Pada menit ke-45:00, rebut Bangunan Tengah dan Kamp Tentara Bayaran.",
         "primaryObjectives6": "Setelah bangunan prioritas diamankan, mulailah membakar kota musuh.",
         "responsibilities": "Tanggung Jawab",
         "responsibilities1": "Jaga bangunan yang direbut dengan formasi pertahanan terkuat Anda.",
@@ -119,7 +119,7 @@
         "responsibilities5": "Bantu kota sekutu kapan pun dibutuhkan.",
         "responsibilities6": "Jika bangunan hilang, segera kumpulkan sumber daya terdekat.",
         "responsibilities7": "Kumpulkan Ruang Bawah Tanah menggunakan barisan tersisa.",
-        "responsibilities8": "Pertahankan kendali atas Kandang Kuda, Tempat Suci, Candi Pedang, Kamp Tentara Bayaran, dan dua Biara jika memungkinkan."
+        "responsibilities8": "Pertahankan kendali atas Kandang Kuda, Tempat Suci, Bangunan Pusat/Tengah, Kamp Tentara Bayaran, dan dua Biara jika memungkinkan."
     },
     "phase1": {
         "title": "Fase 1 — 57:00 hingga 45:01",
@@ -141,7 +141,7 @@
         "bellTower": "Menara Lonceng",
         "upperAbbey": "Biara Atas",
         "lowerAbbey": "Biara Bawah",
-        "swordShrine": "Candi Pedang",
+        "swordShrine": "Bangunan Pedang Tengah",
         "mercenaryCamp": "Kamp Tentara Bayaran",
         "reformation": "Reformasi (hanya jika aliansi Anda memiliki keunggulan jelas)",
         "sanctums": "Tempat Suci"
@@ -158,9 +158,9 @@
         "tip4": "Jika memungkinkan, penyerang harus terus membakar kota musuh menggunakan reli atau serangan solo.",
         "note": {
             "title": "Strategi Dorongan Terakhir (pada 06:00) jika kita kalah poin atau mulai kewalahan",
-            "tip1": "Luncurkan reli ganda ke Candi Pedang, dipimpin oleh dua pemimpin reli terkuat kita. Rasio 50-20-30.",
+            "tip1": "Luncurkan reli ganda ke Bangunan Pedang Tengah, dipimpin oleh dua pemimpin reli terkuat kita. Rasio 50-20-30.",
             "tip2": "Semua pemain yang tersedia harus siap bergabung dalam reli dengan segera.",
-            "tip3": "Jika reli berhasil, defender yang memiliki item Teleportasi harus segera teleportasi di sekitar Candi Pedang (tengah).",
+            "tip3": "Jika reli berhasil, defender yang memiliki item Teleportasi harus segera teleportasi di sekitar Bangunan Pedang Tengah (tengah).",
             "tip4": "Amankan dan kumpulkan Peti Jarahan sebelum musuh bisa menjangkaunya."
         }
     },
