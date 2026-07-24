@@ -163,5 +163,28 @@
             "tip3": "Si le ralliement réussit, les défenseurs possédant un téléporteur doivent immédiatement se téléporter autour du Sanctuaire de l'Épée (centre).",
             "tip4": "Sécurisez et ramassez les Caisses de Butin avant que l'ennemi ne puisse les atteindre."
         }
+    },
+    "assignment": {
+        "title": "Affectation",
+        "legion1": "Légion 1",
+        "legion2": "Légion 2",
+        "legion3": "Légion 3",
+        "table": {
+            "name": "Nom",
+            "squadPower": "Puissance d'Escouade",
+            "building": "Bâtiment",
+            "position": "Position"
+        },
+        "legend": {
+            "title": "Code Couleur"
+        },
+        "sides": {
+            "left": "Côté Gauche",
+            "right": "Côté Droit"
+        },
+        "roles": {
+            "attacker": "Attaquant",
+            "defender": "Défenseur"
+        }
     }
 }
