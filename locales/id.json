@@ -4,8 +4,8 @@
         "title": "Umum",
         "tip1": "Pantau pergerakan musuh.",
         "tip2": "Jadilah yang pertama merebut bangunan tanpa penjagaan di Fase 1.",
-        "tip3": "Jangan menyimpan percepatan pemulihan gratis: Pemulihan di Swordland sepenuhnya gratis.",
-        "tip4": "Jangan menyimpan percepatan pawai gratis: Pengurangan waktu pawai di Swordland sepenuhnya gratis."
+        "tip3": "Jangan menyimpan percepatan pemulihan yang gratis: Pemulihan di Swordland ada yang gratis.",
+        "tip4": "Jangan menyimpan percepatan barisan yang gratis: Pengurangan waktu barisan di Swordland ada yang gratis."
     },
     "understandings": {
         "title": "Cara Mendapatkan Poin Peninggalan",
@@ -112,13 +112,13 @@
         "title.primaryObjectives2": "Kenali penyerang yang ditugaskan bersama Anda.",
         "title.primaryObjectives3": "Bantu reli penyerang menggunakan Chenko dan Yeonwoo.",
         "title.responsibilities": "Tanggung Jawab",
-        "responsibilities1": "Setelah bangunan direbut, segera kirim pawai pertahanan terkuat Anda.",
+        "responsibilities1": "Setelah bangunan direbut, segera kirim barisan pertahanan terkuat Anda.",
         "responsibilities2": "Niatkan Saul atau Gordon di slot pahlawan sebelah kiri.",
         "responsibilities3": "Lanjutkan memperkuat reli.",
         "responsibilities4": "Sebarkan kota Anda untuk menghindari memberi musuh target yang mudah.",
         "responsibilities5": "Bantu kota sekutu kapan pun dibutuhkan.",
         "responsibilities6": "Jika bangunan hilang, segera kumpulkan sumber daya terdekat.",
-        "responsibilities7": "Kumpulkan Ruang Bawah Tanah menggunakan pawai tersisa.",
+        "responsibilities7": "Kumpulkan Ruang Bawah Tanah menggunakan barisan tersisa.",
         "responsibilities8": "Pertahankan kendali atas Kandang Kuda, Tempat Suci, Candi Pedang, Kamp Tentara Bayaran, dan dua Biara jika memungkinkan."
     },
     "phase1": {
@@ -152,7 +152,7 @@
     },
     "phase3": {
         "title": "Fase 3 ― Akhir Permainan (15 Menit Terakhir)",
-        "tip1": "Rebut Ruang Bawah Tanah menggunakan pawai tersisa.",
+        "tip1": "Rebut Ruang Bawah Tanah menggunakan barisan tersisa.",
         "tip2": "Pertahankan kendali atas semua bangunan yang diduduki.",
         "tip3": "defender harus segera meminta bantuan jika berada di bawah tekanan.",
         "tip4": "Jika memungkinkan, penyerang harus terus membakar kota musuh menggunakan reli atau serangan solo.",
@@ -165,7 +165,7 @@
         }
     },
     "assignment": {
-        "title": "⚔ Penugasan",
+        "title": "Penugasan",
         "legion1": "Legiun 1",
         "legion2": "Legiun 2",
         "legion3": "Legiun 3",
