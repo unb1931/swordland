@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ 스워드랜드 전투 가이드",
+    "generals": {
+        "title": "일반 팁",
+        "tip1": "적의 movements를 주의 깊게 관찰하세요.",
+        "tip2": "1단계에서 방어선이 없는 건물을 가장 먼저 점령하세요.",
+        "tip3": "무료 치료 가속을 아끼지 마세요: 스워드랜드에서 치료는 완전히 무료입니다.",
+        "tip4": "무료 행군 가속을 아끼지 마세요: 스워드랜드에서 행군 시간 단축은 완전히 무료입니다."
+    },
+    "understandings": {
+        "title": "유물 포인트 (Relic Points) 획득 방법",
+        "description": "포인트 획득처를 이해하면 최선의 전략을 선택하는 데 도움이 됩니다.",
+        "table": {
+            "headers": {
+                "source": "획득처",
+                "alliancePoints": "연맹 포인트",
+                "personalPoints": "개인 포인트",
+                "notes": "비고"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "최초 점령",
+                    "alliance": "대량의 1회성 보너스",
+                    "personal": "대량의 1회성 보너스",
+                    "note": "건물을 가장 먼저 점령한 연맹이 대량의 보너스를 받습니다."
+                },
+                "buildingOccupation": {
+                    "source": "건물 점유",
+                    "alliance": "지속 포인트",
+                    "personal": "지속 포인트",
+                    "note": "검의 제단(Sword Shrine)과 성소가 가장 높은 포인트를 제공합니다."
+                },
+                "lootCrates": {
+                    "source": "전리품 상자",
+                    "alliance": "보너스 포인트",
+                    "personal": "보너스 포인트",
+                    "note": "적이 점유 중인 건물을 성공적으로 빼앗았을 때 생성됩니다."
+                },
+                "undercellars": {
+                    "source": "지하 통로 (Undercellars)",
+                    "alliance": "서프라이즈 포인트",
+                    "personal": "서프라이즈 포인트",
+                    "note": "후반부에 무작위로 등장합니다. 미니맵을 잘 확인하세요."
+                },
+                "combatAttack": {
+                    "source": "전투 (공격)",
+                    "alliance": "없음",
+                    "personal": "적 처치 전투력 10,000당 80포인트",
+                    "note": "개인 포인트만 지급됩니다."
+                },
+                "combatDefense": {
+                    "source": "전투 (방어)",
+                    "alliance": "없음",
+                    "personal": "적 처치 전투력 10,000당 40포인트",
+                    "note": "공격 시 획득하는 포인트의 절반입니다."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "전략 건물",
+        "description": "이 건물들은 강력한 버프를 제공하므로 개방되는 즉시 점령해야 합니다.",
+        "table": {
+            "headers": {
+                "building": "건물",
+                "effect": "효과",
+                "available": "개방 시간"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "개혁의 전당 (Hall of Reformation)",
+                    "effect": "주는 피해량 +15%<br>받는 피해량 -15%",
+                    "available": "2단계 (45:00)"
+                },
+                "bellTower": {
+                    "building": "종탑 (Bell Tower)",
+                    "effect": "건물 점령 시간 50% 단축",
+                    "available": "1단계 (57:00)"
+                },
+                "royalStables": {
+                    "building": "왕실 마구간 (Royal Stables)",
+                    "effect": "이전(Teleport) 재사용 대기시간 50% 단축 (10분 → 5분)",
+                    "available": "1단계 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "용병 주둔지 (Mercenary Camp)",
+                    "effect": "적 건물을 공격할 용병을 파견할 수 있습니다.",
+                    "available": "2단계 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "공격조 (Attackers)",
+        "primaryObjectives": "주요 목표",
+        "primaryObjectives1": "지정된 건물을 점령하세요. 건물마다 방어조 2–3명과 함께 공격조 1–2명을 배치하세요. 필요시 집결 공격(Rally)을 사용하세요.",
+        "primaryObjectives2": "초반 10분 이내에 모든 우선순위 건물을 확보하세요.",
+        "primaryObjectives3": "점령 후 통제권을 유지하세요.",
+        "primaryObjectives4": "마구간, 성소, 종탑을 최우선으로 공략하세요.",
+        "primaryObjectives5": "12분 시점에 검의 제단과 용병 주둔지를 점령하세요.",
+        "primaryObjectives6": "우선순위 건물이 확보되면 적의 도시를 불태우기 시작하세요.",
+        "responsibilities": "담당 업무",
+        "responsibilities1": "가장 강력한 방어 부대로 점령한 건물을 수호하세요.",
+        "responsibilities2": "가능할 때마다 근처의 집결 공격을 지원하세요.",
+        "responsibilities3": "수세에 몰리면 다른 우선순위 건물로 이동하세요.",
+        "responsibilities4": "별도의 지시가 없는 한 지정된 목표에 집중하세요."
+    },
+    "defenders": {
+        "title": "방어조 (Defenders)",
+        "primaryObjectives": "주요 목표",
+        "primaryObjectives1": "본인이 방어해야 할 지정 건물을 숙지하세요.",
+        "primaryObjectives2": "함께 배치된 공격조 인원을 확인하세요.",
+        "primaryObjectives3": "체첸코와 연우를 사용하여 공격조의 집결 공격을 지원하세요.",
+        "responsibilities": "담당 업무",
+        "responsibilities1": "건물이 점령되면 즉시 가장 강력한 방어 부대를 파견하세요.",
+        "responsibilities2": "왼쪽 영웅 슬롯에 사울 또는 고든을 배치하세요.",
+        "responsibilities3": "집결 부대를 지속적으로 지원(지원군)하세요.",
+        "responsibilities4": "적에게 쉬운 표적이 되지 않도록 도시 위치를 dispersion(분산)시키세요.",
+        "responsibilities5": "필요할 때마다 아군 도시를 도우세요.",
+        "responsibilities6": "건물을 잃은 경우 즉시 근처 자원을 채집하세요.",
+        "responsibilities7": "남은 부대를 사용하여 지하 통로(Undercellars)를 수집하세요.",
+        "responsibilities8": "가능하다면 마구간, 성소, 검의 제단, 용병 주둔지, 수도원 2곳의 통제권을 유지하세요."
+    },
+    "phase1": {
+        "title": "1단계 — 57:00 ~ 45:01",
+        "priorityOrder": "점령 우선순위",
+        "note": {
+            "title": "중요",
+            "tip1": "첫 번째 이전(Teleport)은 무료입니다. 즉시 지정된 목표 근처로 이동하는 데 사용하세요.",
+            "tip2": "비어있는 건물은 기회를 날리는 것입니다. 약한 방어자라도 적의 단독 점령을 막을 수 있습니다.",
+            "tip3": "여유 공격조는 적 도시를 불태워 강제 이전시키고 진형을 무너뜨려야 합니다.",
+            "tip4": "방어조는 본진에 가만히 있어서는 안 됩니다. 적이 위치를 쉽게 파악하지 못하도록 근처 2~3개 건물 사이를 이동하세요.",
+            "tip5": "한 건물에만 너무 집중하지 마세요. 여러 구조물에 방어 인원을 분산시키세요.",
+            "tip6": "마구간과 성소는 여전히 최우선 과제입니다."
+        }
+    },
+    "buildings": {
+        "stables": "마구간",
+        "furthestSanctum": "가장 먼 성소",
+        "closestSanctum": "가장 가까운 성소",
+        "bellTower": "종탑",
+        "upperAbbey": "위쪽 수도원",
+        "lowerAbbey": "아래쪽 수도원",
+        "swordShrine": "검의 제단",
+        "mercenaryCamp": "용병 주둔지",
+        "reformation": "개혁의 전당 (연맹이 확실히 우세한 경우에만)",
+        "sanctums": "성소"
+    },
+    "phase2": {
+        "title": "2단계 ― 45:00",
+        "priorityOrder": "우선순위 순서"
+    },
+    "phase3": {
+        "title": "3단계 ― 후반전 (마지막 15분)",
+        "tip1": "남은 부대로 지하 통로를 점령하세요.",
+        "tip2": "점유 중인 모든 건물의 통제권을 유지하세요.",
+        "tip3": "압박을 받는 방어조는 즉시 지원을 요청해야 합니다.",
+        "tip4": "가능하다면 공격조는 집결 또는 단독 공격으로 적 도시를 계속 불태워야 합니다.",
+        "note": {
+            "title": "포인트가 밀리거나 수세에 몰릴 때의 라스트 푸시 전략 (06:00 시점)",
+            "tip1": "가장 강력한 집결 리더 2명을 필두로 검의 제단에 더블 집결(Double Rally)을 발동하세요. 비율 50-20-30.",
+            "tip2": "참여 가능한 모든 플레이어는 즉시 집결에 합류할 준비를 해야 합니다.",
+            "tip3": "집결에 성공하면 이전 아이템이 있는 방어조는 검의 제단(중앙) 주변으로 즉시 이전하세요.",
+            "tip4": "적이 도달하기 전에 전리품 상자를 확보하고 수집하세요."
+        }
+    },
+    "assignment": {
+        "title": "임무 배정",
+        "legion1": "1군단",
+        "legion2": "2군단",
+        "legion3": "3군단",
+        "table": {
+            "name": "이름",
+            "squadPower": "부대 전투력",
+            "building": "건물",
+            "position": "직책/포지션"
+        },
+        "legend": {
+            "title": "색상 범례"
+        },
+        "sides": {
+            "left": "좌측 (Left Side)",
+            "right": "우측 (Right Side)"
+        },
+        "roles": {
+            "attacker": "공격조 (Attacker)",
+            "defender": "방어조 (Defender)"
+        }
+    }
+}
