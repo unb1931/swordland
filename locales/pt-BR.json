@@ -1,0 +1,190 @@
+{
+    "heroText": "⚔ Guia de Batalha de Swordland",
+    "generals": {
+        "title": "Geral",
+        "tip1": "Fique atento aos movimentos do inimigo.",
+        "tip2": "Seja o primeiro a capturar edifícios desprotegidos na Fase 1.",
+        "tip3": "Não economize acelerações de cura gratuitas: A cura em Swordland é totalmente gratuita.",
+        "tip4": "Não economize acelerações de marcha gratuitas: Reduzir o tempo de marcha em Swordland é totalmente gratuito."
+    },
+    "understandings": {
+        "title": "Como Obter Pontos de Relíquia",
+        "description": "Entender de onde vêm os pontos ajuda você a escolher a melhor estratégia.",
+        "table": {
+            "headers": {
+                "source": "Fonte",
+                "alliancePoints": "Pontos de Aliança",
+                "personalPoints": "Pontos Pessoais",
+                "notes": "Notas"
+            },
+            "rows": {
+                "firstCapture": {
+                    "source": "Primeira Captura",
+                    "alliance": "Grande bônus único",
+                    "personal": "Grande bônus único",
+                    "note": "A primeira aliança a capturar um edifício recebe um grande bônus."
+                },
+                "buildingOccupation": {
+                    "source": "Ocupação de Edifício",
+                    "alliance": "Pontos contínuos",
+                    "personal": "Pontos contínuos",
+                    "note": "O Santuário da Espada (Sword Shrine) e os Santuários oferecem os maiores ganhos de pontos."
+                },
+                "lootCrates": {
+                    "source": "Caixas de Saque",
+                    "alliance": "Pontos bônus",
+                    "personal": "Pontos bônus",
+                    "note": "Aparecem quando um edifício é capturado com sucesso do inimigo."
+                },
+                "undercellars": {
+                    "source": "Subterrâneos (Undercellars)",
+                    "alliance": "Pontos surpresa",
+                    "personal": "Pontos surpresa",
+                    "note": "Aparecem aleatoriamente durante o Fim de Jogo. Fique de olho no minimapa."
+                },
+                "combatAttack": {
+                    "source": "Combate (Ataque)",
+                    "alliance": "Nenhum",
+                    "personal": "80 pontos a cada 10.000 de Poder inimigo derrotado",
+                    "note": "Apenas concede Pontos Pessoais."
+                },
+                "combatDefense": {
+                    "source": "Combate (Defesa)",
+                    "alliance": "Nenhum",
+                    "personal": "40 pontos a cada 10.000 de Poder inimigo derrotado",
+                    "note": "Metade dos pontos obtidos ao atacar."
+                }
+            }
+        }
+    },
+    "strategicBuildings": {
+        "title": "Edifícios Estratégicos",
+        "description": "Estes edifícios concedem bônus poderosos e devem ser capturados assim que estiverem disponíveis.",
+        "table": {
+            "headers": {
+                "building": "Edifício",
+                "effect": "Efeito",
+                "available": "Disponível"
+            },
+            "rows": {
+                "hallOfReformation": {
+                    "building": "Salão da Reforma (Hall of Reformation)",
+                    "effect": "+15% de Dano Causado<br>-15% de Dano Recebido",
+                    "available": "Fase 2 (45:00)"
+                },
+                "bellTower": {
+                    "building": "Torre do Sino (Bell Tower)",
+                    "effect": "Reduz o tempo de captura de edifícios em 50%",
+                    "available": "Fase 1 (57:00)"
+                },
+                "royalStables": {
+                    "building": "Estábulo Real (Royal Stables)",
+                    "effect": "Reduz o tempo de espera do teletransporte em 50% (10 min → 5 min)",
+                    "available": "Fase 1 (57:00)"
+                },
+                "mercenaryCamp": {
+                    "building": "Acampamento Mercenário (Mercenary Camp)",
+                    "effect": "Permite que você envie Mercenários para atacar edifícios inimigos.",
+                    "available": "Fase 2 (45:00)"
+                }
+            }
+        }
+    },
+    "attackers": {
+        "title": "Atacantes",
+        "primaryObjectives": "Objetivos Principais",
+        "primaryObjectives1": "Capture os edifícios designados. Atribua 1–2 atacantes para cada edifício junto com 2–3 defensores. Use comícios (rallies) se necessário.",
+        "primaryObjectives2": "Garanta todos os edifícios prioritários nos primeiros 10 minutos.",
+        "primaryObjectives3": "Mantenha o controle após a captura.",
+        "primaryObjectives4": "Foque primeiro nos Estábulos, Santuários e na Torre do Sino.",
+        "primaryObjectives5": "No minuto 45, capture o Santuário da Espada e o Acampamento Mercenário.",
+        "primaryObjectives6": "Assim que os edifícios prioritários estiverem garantidos, comece a queimar as cidades inimigas.",
+        "responsibilities": "Responsabilidades",
+        "responsibilities1": "Proteja os edifícios capturados com suas formações defensivas mais fortes.",
+        "responsibilities2": "Apoie os comícios próximos sempre que possível.",
+        "responsibilities3": "Se estiver sobrecarregado, mude para outro edifício prioritário.",
+        "responsibilities4": "Permaneça no seu alvo designado, a menos que receba outras instruções."
+    },
+    "defenders": {
+        "title": "Defensores",
+        "primaryObjectives": "Objetivos Principais",
+        "primaryObjectives1": "Saiba qual edifício foi atribuído para você defender.",
+        "primaryObjectives2": "Identifique os atacantes designados com você.",
+        "primaryObjectives3": "Apoie os comícios dos atacantes usando Chenko e Yeonwoo.",
+        "responsibilities": "Responsabilidades",
+        "responsibilities1": "Assim que o edifício for capturado, envie imediatamente sua marcha defensiva mais forte.",
+        "responsibilities2": "Coloque Saul ou Gordon no slot de herói à esquerda.",
+        "responsibilities3": "Continue reforçando os comícios (rallies).",
+        "responsibilities4": "Disperse sua cidade para evitar dar um alvo fácil ao inimigo.",
+        "responsibilities5": "Ajude as cidades aliadas sempre que necessário.",
+        "responsibilities6": "Se um edifício for perdido, colete recursos próximos imediatamente.",
+        "responsibilities7": "Colete Subterráneos usando as marchas restantes.",
+        "responsibilities8": "Mantenha o controle dos Estábulos, Santuários, Santuário da Espada, Acampamento Mercenário e duas Abadias, se possível."
+    },
+    "phase1": {
+        "title": "Fase 1 — 57:00 a 45:01",
+        "priorityOrder": "Prioridade de Captura",
+        "note": {
+            "title": "Importante",
+            "tip1": "Seu primeiro teletransporte é gratuito — use-o para se posicionar perto do seu alvo designado imediatamente.",
+            "tip2": "Edifícios vazios são uma oportunidade perdida — até mesmo um defensor fraco pode evitar uma captura solo.",
+            "tip3": "Atacantes extras devem queimar cidades inimigas para forçar teletransportes e desorganizar a formação deles.",
+            "tip4": "Defensores não devem ficar parados na base. Em vez disso, movam-se entre dois ou três edifícios próximos onde o inimigo não consiga detectar facilmente sua cidade.",
+            "tip5": "Não se concentre demais em um único edifício; disperse os defensores em várias estruturas.",
+            "tip6": "Estábulos e Santuários continuam sendo a prioridade máxima."
+        }
+    },
+    "buildings": {
+        "stables": "Estábulos",
+        "furthestSanctum": "Santuário Mais Distante",
+        "closestSanctum": "Santuário Mais Próximo",
+        "bellTower": "Torre do Sino",
+        "upperAbbey": "Abadia Superior",
+        "lowerAbbey": "Abadia Inferior",
+        "swordShrine": "Santuário da Espada",
+        "mercenaryCamp": "Acampamento Mercenário",
+        "reformation": "Reforma (apenas se sua aliança tiver uma vantagem clara)",
+        "sanctums": "Santuários"
+    },
+    "phase2": {
+        "title": "Fase 2 ― 45:00",
+        "priorityOrder": "Ordem de Prioridade"
+    },
+    "phase3": {
+        "title": "Fase 3 ― Fim de Jogo (Últimos 15 Minutos)",
+        "tip1": "Capture Subterráneos usando as marchas restantes.",
+        "tip2": "Mantenha o controle de todos os edifícios ocupados.",
+        "tip3": "Os defensores devem pedir ajuda imediatamente se estiverem sob pressão.",
+        "tip4": "Se possível, os atacantes devem continuar queimando cidades inimigas usando comícios ou ataques solo.",
+        "note": {
+            "title": "Estratégia do Empurrão Final (aos 06:00) se estivermos perdendo pontos ou sobrecarregados",
+            "tip1": "Lance um comício duplo (Double Rally) no Santuário da Espada, liderado por nossos dois líderes de comício mais fortes. Proporção 50-20-30.",
+            "tip2": "Todos os jogadores disponíveis devem estar prontos para se juntar ao comício imediatamente.",
+            "tip3": "Se o comício for bem-sucedido, os defensores com item de Teletransporte devem se teletransportar imediatamente ao redor do Santuário da Espada (centro).",
+            "tip4": "Garanta e colete as Caixas de Saque antes que o inimigo possa alcançá-las."
+        }
+    },
+    "assignment": {
+        "title": "Atribuição",
+        "legion1": "Legião 1",
+        "legion2": "Legião 2",
+        "legion3": "Legião 3",
+        "table": {
+            "name": "Nome",
+            "squadPower": "Poder do Esquadrão",
+            "building": "Edifício",
+            "position": "Posição"
+        },
+        "legend": {
+            "title": "Código de Cores"
+        },
+        "sides": {
+            "left": "Lado Esquerdo",
+            "right": "Lado Direito"
+        },
+        "roles": {
+            "attacker": "Atacante",
+            "defender": "Defensor"
+        }
+    }
+}
